@@ -1,5 +1,3 @@
-__all__ = ["GradientDescent"]
-
 import itertools
 import warnings
 
@@ -75,7 +73,7 @@ class GradientDescent(pyca.Solver):
         )
         super().__init__(**kwargs)
 
-        if (f is None):
+        if f is None:
             msg = " ".join(
                 [
                     "Cannot minimize always-0 functional.",
